@@ -1,0 +1,5 @@
+flask
+flask-session
+python-jose[cryptography]
+passlib[bcrypt]
+msal

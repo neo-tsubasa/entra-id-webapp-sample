@@ -1,0 +1,13 @@
+version: '3'
+services:
+  api:
+    build:
+      args:
+        COPY_FROM: ./requirements.txt
+        COPY_TO: /code/requirements.txt
+        SERVER_OPTIONS: --port 8000 --debugger --reload
+    volumes:
+      - ./api:/code
+    image: health-tech-web-sample-api
+    ports:
+      - 8000:8000
